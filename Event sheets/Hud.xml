@@ -33,11 +33,7 @@
             <sub-events>
                 <event-block sid="503832523881745">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="700354493258117" type="System">
-                            <param id="0" name="Variable">Health</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">4</param>
-                        </condition>
+                        <condition id="-2" name="On start of layout" sid="700354493258117" type="System" />
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="399272630545833" type="Heart">
@@ -46,15 +42,20 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="594616195526287">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="301205874746412" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="963024494312275" type="Heart">
+                            <param id="0" name="Frame number">Health</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="489217771876309">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="603585444640552" type="Enemy">
                             <param id="0" name="Object">Character</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="449426571680572" type="System">
-                            <param id="0" name="Variable">Health</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">4</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -62,115 +63,19 @@
                             <param id="0" name="Variable">Health</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="11" name="Set collisions enabled" sid="448967015375610" type="Character">
+                        <action id="11" name="Set collisions enabled" sid="448967015375610" type="Enemy">
                             <param id="0" name="Collisions">0</param>
                         </action>
                         <action id="-16" name="Wait" sid="555691017508795" type="System">
                             <param id="0" name="Seconds">0.5</param>
                         </action>
-                        <action id="11" name="Set collisions enabled" sid="271396635637851" type="Character">
-                            <param id="0" name="Collisions">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="780941038248352">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="178562589891299" type="Enemy">
-                            <param id="0" name="Object">Character</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="383744429795293" type="System">
-                            <param id="0" name="Variable">Health</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="603262578801219" type="System">
-                            <param id="0" name="Variable">Health</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="177676024315135" type="Heart">
-                            <param id="0" name="Animation">&quot;3Heart&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="11" name="Set collisions enabled" sid="272902406790820" type="Character">
-                            <param id="0" name="Collisions">0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="331812513213794" type="System">
-                            <param id="0" name="Seconds">0.5</param>
-                        </action>
-                        <action id="11" name="Set collisions enabled" sid="192114105447532" type="Character">
-                            <param id="0" name="Collisions">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="322862514472295">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="136371832593923" type="Enemy">
-                            <param id="0" name="Object">Character</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="265329549541594" type="System">
-                            <param id="0" name="Variable">Health</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="679921760978454" type="System">
-                            <param id="0" name="Variable">Health</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="949443601984283" type="Heart">
-                            <param id="0" name="Animation">&quot;2Heart&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="11" name="Set collisions enabled" sid="838158290861256" type="Character">
-                            <param id="0" name="Collisions">0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="377348834283178" type="System">
-                            <param id="0" name="Seconds">0.5</param>
-                        </action>
-                        <action id="11" name="Set collisions enabled" sid="858100933024106" type="Character">
-                            <param id="0" name="Collisions">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="356827861051323">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="667902028647533" type="Enemy">
-                            <param id="0" name="Object">Character</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="524665530807896" type="System">
-                            <param id="0" name="Variable">Health</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="625218487384650" type="System">
-                            <param id="0" name="Variable">Health</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="677453180923373" type="Heart">
-                            <param id="0" name="Animation">&quot;1Heart&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="11" name="Set collisions enabled" sid="457372543372785" type="Character">
-                            <param id="0" name="Collisions">0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="611240068116397" type="System">
-                            <param id="0" name="Seconds">0.5</param>
-                        </action>
-                        <action id="11" name="Set collisions enabled" sid="579889253763828" type="Character">
+                        <action id="11" name="Set collisions enabled" sid="271396635637851" type="Enemy">
                             <param id="0" name="Collisions">1</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="635347741018855">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="770707261551891" type="Enemy">
-                            <param id="0" name="Object">Character</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="876470297689933" type="System">
                             <param id="0" name="Variable">Health</param>
                             <param id="1" name="Comparison">0</param>
@@ -178,25 +83,11 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-11" name="Subtract from" sid="429834982739374" type="System">
-                            <param id="0" name="Variable">Health</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="590392543363097" type="Heart" />
                         <action id="-16" name="Wait" sid="137750493506325" type="System">
                             <param id="0" name="Seconds">2</param>
                         </action>
                         <action id="-26" name="Restart layout" sid="284764503178709" type="System" />
                         <action id="-21" name="Reset global variables" sid="362527548676887" type="System" />
-                    </actions>
-                </event-block>
-                <event-block sid="258297886751860">
-                    <conditions />
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="606122250275706" type="System">
-                            <param id="0" name="Variable">Health</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -214,8 +105,8 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-12" name="Subtract from" sid="200611470774627" type="Character">
-                            <param id="0" name="Instance variable">cur_stamina</param>
+                        <action id="-11" name="Subtract from" sid="200611470774627" type="System">
+                            <param id="0" name="Variable">Stamina</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -226,7 +117,7 @@
                     </conditions>
                     <actions>
                         <action id="-5" name="Set width" sid="156073833504710" type="StaminaBar">
-                            <param id="0" name="Width">self.max_width/Character.Stamina*character.cur_Stamina</param>
+                            <param id="0" name="Width">self.max_width*Stamina</param>
                         </action>
                     </actions>
                 </event-block>
@@ -235,33 +126,128 @@
                         <condition id="-2" name="On start of layout" sid="763651634489022" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-5" name="Set width" sid="493637529768602" type="StaminaBar">
-                            <param id="0" name="Width">Self.max_width</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="944320724732400" type="System">
-                            <param id="0" name="Object to create">Box1</param>
-                            <param id="1" name="Layer">&quot;Hud&quot;</param>
-                            <param id="2" name="X">StaminaBar.X</param>
-                            <param id="3" name="Y">StaminaBar.Y</param>
-                        </action>
-                        <action id="-29" name="Move to object" sid="824325097572692" type="Box1">
-                            <param id="0" name="Where">1</param>
-                            <param id="1" name="Object">StaminaBar</param>
+                        <action id="-5" name="Set width" sid="500731844119908" type="StaminaBar">
+                            <param id="0" name="Width">self.max_width*Stamina</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="329896487394370">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="498071980958007" type="Character">
-                            <param id="0" name="Instance variable">cur_stamina</param>
+                        <condition id="-14" name="Compare variable" sid="498071980958007" type="System">
+                            <param id="0" name="Variable">Stamina</param>
                             <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="238971839709519" type="Character">
-                            <param id="0" name="Instance variable">cur_stamina</param>
+                        <action id="-9" name="Set value" sid="238971839709519" type="System">
+                            <param id="0" name="Variable">Stamina</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="735989824039534">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="988037266625592" type="System">
+                    <param id="0" name="Variable">Stamina</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">15</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="332164214262007" type="System">
+                    <param id="0" name="Variable">Stamina</param>
+                    <param id="1" name="Value">15</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="404402121882011">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="282268331970036" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="185642110283369" type="System">
+                    <param id="0" name="Variable">Stamina</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">14</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="440716291209723" type="System">
+                    <param id="0" name="Variable">Stamina</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="468887337407321" title="Sprint">
+            <sub-events>
+                <event-block disabled="1" sid="553432791879921">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="264526626891505" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="325715577320769" type="Character">
+                            <param id="0" name="Angle">270</param>
+                            <param id="1" name="Distance">2</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="517657867953487" type="System">
+                            <param id="0" name="Variable">Sprint</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="400281434240500">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="579204096948359" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="714445180310835" type="Character">
+                            <param id="0" name="Angle">180</param>
+                            <param id="1" name="Distance">2</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="349703827880872" type="System">
+                            <param id="0" name="Variable">Sprint</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="627791905427739">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="651073586286494" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="587040141421186" type="Character">
+                            <param id="0" name="Angle">90</param>
+                            <param id="1" name="Distance">2</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="854192124986172" type="System">
+                            <param id="0" name="Variable">Sprint</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="329626030799648">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="694075640153091" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="373169336201038" type="Character">
+                            <param id="0" name="Angle">0</param>
+                            <param id="1" name="Distance">2</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="242254149320057" type="System">
+                            <param id="0" name="Variable">Sprint</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>

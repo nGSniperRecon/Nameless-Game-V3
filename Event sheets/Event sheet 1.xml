@@ -5,7 +5,7 @@
     <events>
         <include>Hud</include>
         <variable constant="0" name="Sprint" sid="447135965858566" static="0" type="number">0</variable>
-        <variable constant="0" name="Stamina" sid="295191592883007" static="0" type="number">0</variable>
+        <variable constant="0" name="Stamina" sid="295191592883007" static="0" type="number">15</variable>
         <variable constant="0" name="Health" sid="158944638278968" static="0" type="number">4</variable>
         <variable constant="0" name="Gold" sid="910872753857843" static="0" type="number">0</variable>
         <variable constant="0" name="Dead" sid="882677332269635" static="0" type="number">0</variable>
@@ -29,7 +29,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="934834647780420" type="Character">
+                <action behavior="8Direction" id="7" name="Simulate control" sid="812055665502740" type="Character">
                     <param id="0" name="Control">0</param>
                 </action>
             </actions>
@@ -41,7 +41,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="482161307256424" type="Character">
+                <action behavior="8Direction" id="7" name="Simulate control" sid="409825928348624" type="Character">
                     <param id="0" name="Control">3</param>
                 </action>
             </actions>
@@ -53,7 +53,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="440066010466285" type="Character">
+                <action behavior="8Direction" id="7" name="Simulate control" sid="899772705667223" type="Character">
                     <param id="0" name="Control">1</param>
                 </action>
             </actions>
@@ -67,12 +67,6 @@
                     <param id="0" name="Object">Character</param>
                 </action>
             </actions>
-        </event-block>
-        <event-block sid="636476900142775">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="471477202806360" type="System" />
-            </conditions>
-            <actions />
         </event-block>
     </events>
 </c2eventsheet>
