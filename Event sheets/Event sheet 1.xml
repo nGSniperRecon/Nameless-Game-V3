@@ -66,6 +66,7 @@
                 <action id="-8" name="Scroll to object" sid="873647986188783" type="System">
                     <param id="0" name="Object">Character</param>
                 </action>
+                <action id="2" name="Stop" sid="238346858748427" type="Coin" />
             </actions>
         </event-block>
     </events>
