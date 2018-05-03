@@ -27,6 +27,19 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="773785241265279">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="709645680359083" type="Enemy" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="433277014458994" type="System">
+                            <param id="0" name="Object to create">Coin</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="499154104032735" title="Health">
