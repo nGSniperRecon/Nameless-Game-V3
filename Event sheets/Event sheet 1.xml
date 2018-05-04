@@ -86,7 +86,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="391686774200599">
+                <event-block disabled="1" sid="391686774200599">
                     <conditions>
                         <condition id="3" name="On key released" sid="318651031177323" type="Keyboard">
                             <param id="0" name="Key">87 (W)</param>
@@ -96,7 +96,7 @@
                         <action id="2" name="Stop" sid="268294645912924" type="Character" />
                     </actions>
                 </event-block>
-                <event-block sid="786630583584383">
+                <event-block disabled="1" sid="786630583584383">
                     <conditions>
                         <condition id="3" name="On key released" sid="539502243828412" type="Keyboard">
                             <param id="0" name="Key">65 (A)</param>
@@ -106,7 +106,7 @@
                         <action id="2" name="Stop" sid="972492087941224" type="Character" />
                     </actions>
                 </event-block>
-                <event-block sid="128433392423353">
+                <event-block disabled="1" sid="128433392423353">
                     <conditions>
                         <condition id="3" name="On key released" sid="595080814735411" type="Keyboard">
                             <param id="0" name="Key">83 (S)</param>
@@ -116,7 +116,7 @@
                         <action id="2" name="Stop" sid="315618595810651" type="Character" />
                     </actions>
                 </event-block>
-                <event-block sid="267505005807201">
+                <event-block disabled="1" sid="267505005807201">
                     <conditions>
                         <condition id="3" name="On key released" sid="219907682287899" type="Keyboard">
                             <param id="0" name="Key">68 (D)</param>
@@ -145,24 +145,29 @@
         </event-group>
         <event-group description="" sid="248266349971543" title="Attack">
             <sub-events>
-                <event-block sid="847820441681928">
+                <event-block sid="347279946139114">
                     <conditions>
-                        <condition id="2" name="Is playing" sid="512209561821881" type="Character">
+                        <condition id="4" name="On finished" sid="613460202102791" type="Character">
                             <param id="0" name="Animation">&quot;Hit&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="484865179122009" type="Character">
-                            <param id="0" name="Animation">&quot;Hit&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-11" name="Subtract from" sid="403926636656424" type="System">
-                            <param id="0" name="Variable">Stamina</param>
-                            <param id="1" name="Value">1</param>
+                        <action id="-12" name="Set group active" sid="112629178942450" type="System">
+                            <param id="0" name="Group name">&quot;IDLE&quot;</param>
+                            <param id="1" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="234959309056479">
+                <event-block sid="160898516252566">
+                    <conditions />
+                    <actions>
+                        <action id="-3" name="Set position" sid="991592270058822" type="Sword">
+                            <param id="0" name="X">Character.X</param>
+                            <param id="1" name="Y">Character.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="847820441681928">
                     <conditions>
                         <condition id="0" name="On click" sid="550873769166094" type="Mouse">
                             <param id="0" name="Mouse button">2</param>
@@ -170,8 +175,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="497102477525313" type="Sword">
-                            <param id="0" name="Animation">&quot;Swing&quot;</param>
+                        <action id="-12" name="Set group active" sid="447243133168795" type="System">
+                            <param id="0" name="Group name">&quot;IDLE&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="484865179122009" type="Character">
+                            <param id="0" name="Animation">&quot;Hit&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="0" name="Spawn another object" sid="586426429774153" type="Character">
@@ -179,6 +188,62 @@
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="Image point">0</param>
                         </action>
+                        <action id="4" name="Set animation" sid="497102477525313" type="Sword">
+                            <param id="0" name="Animation">&quot;Swing&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="403926636656424" type="System">
+                            <param id="0" name="Variable">Stamina</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="782021172516464" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="144304315729795" type="Sword" />
+                    </actions>
+                </event-block>
+                <event-block sid="815104189461762">
+                    <conditions>
+                        <condition disabled="1" id="0" name="On click" sid="235412918439688" type="Mouse">
+                            <param id="0" name="Mouse button">2</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="876006743933675">
+                    <conditions>
+                        <condition id="0" name="On click" sid="991277702235565" type="Mouse">
+                            <param id="0" name="Mouse button">2</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="162045024550984" type="System">
+                            <param id="0" name="Group name">&quot;IDLE&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="719942263521789" type="Character">
+                            <param id="0" name="Animation">&quot;Hit&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="308813210848886" type="Character">
+                            <param id="0" name="Object">Sword</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="536641412819633" type="Sword">
+                            <param id="0" name="Animation">&quot;Swing&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="989903812236525" type="System">
+                            <param id="0" name="Variable">Stamina</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="265957815173799" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="169458032928940" type="Sword" />
                     </actions>
                 </event-block>
             </sub-events>

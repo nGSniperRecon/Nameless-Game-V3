@@ -97,7 +97,7 @@
                     </conditions>
                     <actions>
                         <action id="-16" name="Wait" sid="137750493506325" type="System">
-                            <param id="0" name="Seconds">2</param>
+                            <param id="0" name="Seconds">1.5</param>
                         </action>
                         <action id="-26" name="Restart layout" sid="284764503178709" type="System" />
                         <action id="-21" name="Reset global variables" sid="362527548676887" type="System" />
