@@ -139,11 +139,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>941.078674316</x>
-                        <y>490.702819824</y>
+                        <x>941.399169922</x>
+                        <y>490.731933594</y>
                         <z>0</z>
-                        <width>12.950965881</width>
-                        <height>31.600357056</height>
+                        <width>13.679166794</width>
+                        <height>33.377166748</height>
                         <depth>0</depth>
                         <hotspotX>0.439999998</hotspotX>
                         <hotspotY>1.016393423</hotspotY>
@@ -632,8 +632,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>978.861328125</x>
-                        <y>404.436248779</y>
+                        <x>980.018493652</x>
+                        <y>397.485443115</y>
                         <z>0</z>
                         <width>229</width>
                         <height>118</height>
@@ -932,24 +932,27 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SwordIcon" uid="37">
+                <instance type="Sword" uid="37">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>295.836975098</x>
-                        <y>126.054344177</y>
+                        <x>543.964172363</x>
+                        <y>-40.754180908</y>
                         <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
+                        <width>16</width>
+                        <height>16</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.9375</hotspotX>
+                        <hotspotY>0.0625</hotspotY>
                         <angle>0.718636453</angle>
                         <opacity>1</opacity>
                     </world>
@@ -996,6 +999,28 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite7" uid="41">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>295.304962158</x>
+                        <y>126.150688171</y>
+                        <z>0</z>
+                        <width>7</width>
+                        <height>24</height>
+                        <depth>0</depth>
+                        <hotspotX>0.285714298</hotspotX>
+                        <hotspotY>0.416666657</hotspotY>
+                        <angle>0.643451035</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
