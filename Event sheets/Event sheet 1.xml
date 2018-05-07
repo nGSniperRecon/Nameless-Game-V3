@@ -4,6 +4,7 @@
     <name>Event sheet 1</name>
     <events>
         <include>Hud</include>
+        <variable constant="0" name="SlimeHeath" sid="630714026279354" static="0" type="number">3</variable>
         <variable constant="0" name="Sprint" sid="447135965858566" static="0" type="number">0</variable>
         <variable constant="0" name="Stamina" sid="295191592883007" static="0" type="number">15</variable>
         <variable constant="0" name="Health" sid="158944638278968" static="0" type="number">4</variable>
@@ -246,6 +247,11 @@
                         <action id="-9" name="Destroy" sid="169458032928940" type="Sword" />
                     </actions>
                 </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="851945559254862" title="Enemy">
+            <sub-events>
+                <event-group description="" sid="841322029183063" title="Slime" />
             </sub-events>
         </event-group>
     </events>
