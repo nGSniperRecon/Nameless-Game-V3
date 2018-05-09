@@ -10,6 +10,7 @@
         <variable constant="0" name="Health" sid="158944638278968" static="0" type="number">4</variable>
         <variable constant="0" name="Gold" sid="910872753857843" static="0" type="number">0</variable>
         <variable constant="0" name="Dead" sid="882677332269635" static="0" type="number">0</variable>
+        <variable constant="0" name="State" sid="223784037926403" static="0" type="number">-1</variable>
         <variable constant="0" name="inventory_open" sid="840254342228193" static="0" type="number">0</variable>
         <event-group description="" sid="763687313571749" title="Moving">
             <sub-events>
@@ -17,6 +18,112 @@
                     <conditions>
                         <condition id="2" name="Key is down" sid="219315868624756" type="Keyboard">
                             <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="460750859609682" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="226475040773710">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="390038241615501" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="154663873368670" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="530369194861466">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="855517088522992" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="410829210001434" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="996939733797034">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="760246645395056" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="857879736637083" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="251064642552782">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="404376864414650" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="432025935747092" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="992182885061060">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="915551235133367" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="612896878401391" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="160124545647349">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="949864063950730" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="310291086280058" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="415431299601888">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="723716320107885" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="796721461617907" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="942095584562130">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="408710112141305" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -29,10 +136,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="226475040773710">
+                <event-block sid="713541173715848">
                     <conditions>
-                        <condition id="2" name="Key is down" sid="390038241615501" type="Keyboard">
-                            <param id="0" name="Key">65 (A)</param>
+                        <condition id="-14" name="Compare variable" sid="361719457327326" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -45,10 +154,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="530369194861466">
+                <event-block sid="888807730515948">
                     <conditions>
-                        <condition id="2" name="Key is down" sid="855517088522992" type="Keyboard">
-                            <param id="0" name="Key">83 (S)</param>
+                        <condition id="-14" name="Compare variable" sid="502770434923095" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -61,10 +172,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="996939733797034">
+                <event-block sid="601496328566388">
                     <conditions>
-                        <condition id="2" name="Key is down" sid="760246645395056" type="Keyboard">
-                            <param id="0" name="Key">68 (D)</param>
+                        <condition id="-14" name="Compare variable" sid="807645649990528" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -77,6 +190,21 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="139050908995153">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="617796065010873" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="111297827016934" type="Character">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="442775181916198">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="317567278224105" type="System" />
@@ -85,46 +213,6 @@
                         <action id="-8" name="Scroll to object" sid="873647986188783" type="System">
                             <param id="0" name="Object">Character</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="391686774200599">
-                    <conditions>
-                        <condition id="3" name="On key released" sid="318651031177323" type="Keyboard">
-                            <param id="0" name="Key">87 (W)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="2" name="Stop" sid="268294645912924" type="Character" />
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="786630583584383">
-                    <conditions>
-                        <condition id="3" name="On key released" sid="539502243828412" type="Keyboard">
-                            <param id="0" name="Key">65 (A)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="2" name="Stop" sid="972492087941224" type="Character" />
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="128433392423353">
-                    <conditions>
-                        <condition id="3" name="On key released" sid="595080814735411" type="Keyboard">
-                            <param id="0" name="Key">83 (S)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="2" name="Stop" sid="315618595810651" type="Character" />
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="267505005807201">
-                    <conditions>
-                        <condition id="3" name="On key released" sid="219907682287899" type="Keyboard">
-                            <param id="0" name="Key">68 (D)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="2" name="Stop" sid="125690995961000" type="Character" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -160,7 +248,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="160898516252566">
+                <event-block disabled="1" sid="160898516252566">
                     <conditions />
                     <actions>
                         <action id="-3" name="Set position" sid="991592270058822" type="Sword">
@@ -174,6 +262,28 @@
                         <condition id="0" name="On click" sid="550873769166094" type="Mouse">
                             <param id="0" name="Mouse button">2</param>
                             <param id="1" name="Click type">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="675177064441528" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="692098229918865" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="460683347642730" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="703034318182098">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="487798659554130" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -199,19 +309,10 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-16" name="Wait" sid="782021172516464" type="System">
-                            <param id="0" name="Seconds">0.5</param>
+                            <param id="0" name="Seconds">0.1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="144304315729795" type="Sword" />
                     </actions>
-                </event-block>
-                <event-block sid="815104189461762">
-                    <conditions>
-                        <condition disabled="1" id="0" name="On click" sid="235412918439688" type="Mouse">
-                            <param id="0" name="Mouse button">2</param>
-                            <param id="1" name="Click type">0</param>
-                        </condition>
-                    </conditions>
-                    <actions />
                 </event-block>
                 <event-block sid="876006743933675">
                     <conditions>
