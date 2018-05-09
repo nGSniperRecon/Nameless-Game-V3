@@ -229,39 +229,5 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="691359144367864">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="483433470044537" type="Keyboard">
-                    <param id="0" name="Key">32 (Space)</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="307067257932485" type="System">
-                    <param id="0" name="Variable">Stamina</param>
-                    <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-                <condition id="2" name="Key is down" sid="439978885729432" type="Keyboard">
-                    <param id="0" name="Key">68 (D)</param>
-                </condition>
-                <condition id="-8" inverted="1" name="Compare two values" sid="541535603004890" type="System">
-                    <param id="0" name="First value">Character.X</param>
-                    <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Second value">Wall.X+50</param>
-                </condition>
-                <condition disabled="1" id="-8" inverted="1" name="Compare two values" sid="821317611516535" type="System">
-                    <param id="0" name="First value">Character.Y</param>
-                    <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Second value">Wall.Y-50</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-1" name="Set X" sid="126305935660196" type="Character">
-                    <param id="0" name="X">Character.X+50</param>
-                </action>
-                <action id="-11" name="Subtract from" sid="932280679102935" type="System">
-                    <param id="0" name="Variable">Stamina</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>
