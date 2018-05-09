@@ -1400,6 +1400,41 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\jhedges\Downloads\Dungeon Done.gif" />
         </object-type>
+        <object-type name="Sprite8" sid="219029095598262">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Shoot" pingpong="0" repeatcount="1" repeatto="0" sid="959874773804244" speed="5">
+                    <frame duration="1" hotspotX="0.416667" hotspotY="0.5" original-source="C:\Users\jhedges\Downloads\Bow Shooting.png">
+                        <collision-poly>
+                            <point x="0.885416" y="0.472222" />
+                            <point x="0.458333" y="0.0972222" />
+                            <point x="0.125" y="0.520833" />
+                            <point x="0.427083" y="0.930555" />
+                            <point x="0.885417" y="0.576389" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.363636" hotspotY="0.375">
+                        <collision-poly>
+                            <point x="0.136364" y="0.335938" />
+                            <point x="0.420455" y="0.0703125" />
+                            <point x="0.886364" y="0.460938" />
+                            <point x="0.886363" y="0.585938" />
+                            <point x="0.386363" y="0.914063" />
+                            <point x="0.125" y="0.640625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="-2" hotspotY="0.388889">
+                        <collision-poly>
+                            <point x="0.875001" y="0.590278" />
+                            <point x="0.625" y="0.930555" />
+                            <point x="0.09375" y="0.541667" />
+                            <point x="0.625" y="0.0625" />
+                            <point x="0.895834" y="0.472223" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

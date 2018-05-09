@@ -195,28 +195,6 @@
             </actions>
         </event-block>
         <event-group description="" sid="468887337407321" title="Sprint" />
-        <event-group description="" sid="398567712043124" title="Weaponswitch">
-            <sub-events>
-                <event-block sid="617863733129115">
-                    <conditions>
-                        <condition id="0" name="On click" sid="497566449884485" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                </event-block>
-                <event-block sid="697753384236790">
-                    <conditions>
-                        <condition id="0" name="On click" sid="727195634985044" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                </event-block>
-            </sub-events>
-        </event-group>
         <event-block sid="367565613745720">
             <conditions>
                 <condition id="0" name="On key pressed" sid="921760728529338" type="Keyboard">
