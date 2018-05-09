@@ -5,11 +5,7 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <show-addaction-links>1</show-addaction-links>
 <<<<<<< HEAD
-<<<<<<< HEAD
     <scroll-pos>625</scroll-pos>
-=======
-    <scroll-pos>725</scroll-pos>
->>>>>>> c1a8ab342d03110865fc87945e4030d7595591d1
 =======
     <scroll-pos>725</scroll-pos>
 >>>>>>> c1a8ab342d03110865fc87945e4030d7595591d1
@@ -27,11 +23,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </condition-namecolumns>
     <events>
 <<<<<<< HEAD
-<<<<<<< HEAD
         <event collapsed="1" sid="763687313571749" />
         <event collapsed="1" sid="259275536871314" />
-=======
->>>>>>> c1a8ab342d03110865fc87945e4030d7595591d1
 =======
 >>>>>>> c1a8ab342d03110865fc87945e4030d7595591d1
         <event collapsed="1" sid="851945559254862" />

@@ -5,23 +5,17 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
 <<<<<<< HEAD
-<<<<<<< HEAD
         <position-x>871.382</position-x>
         <position-y>355.291</position-y>
         <position-z>72.3995</position-z>
         <lookat-x>871.382</lookat-x>
         <lookat-y>355.291</lookat-y>
 =======
-=======
->>>>>>> c1a8ab342d03110865fc87945e4030d7595591d1
         <position-x>261.492</position-x>
         <position-y>321.784</position-y>
         <position-z>96.3637</position-z>
         <lookat-x>261.492</lookat-x>
         <lookat-y>321.784</lookat-y>
-<<<<<<< HEAD
->>>>>>> c1a8ab342d03110865fc87945e4030d7595591d1
-=======
 >>>>>>> c1a8ab342d03110865fc87945e4030d7595591d1
         <lookat-z>0</lookat-z>
     </camera>
