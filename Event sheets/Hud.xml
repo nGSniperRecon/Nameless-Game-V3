@@ -263,6 +263,7 @@
                 </action>
             </actions>
         </event-block>
+<<<<<<< HEAD
         <event-block sid="704021668876986">
             <conditions>
                 <condition id="0" name="On key pressed" sid="687924514267500" type="Keyboard">
@@ -331,5 +332,7 @@
                 </action>
             </actions>
         </event-block>
+=======
+>>>>>>> af905fce92cea4fba3380dfb5ecff9df8cbd6e8a
     </events>
 </c2eventsheet>
