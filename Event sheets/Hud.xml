@@ -194,7 +194,41 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="468887337407321" title="Sprint" />
+        <event-group description="" sid="468887337407321" title="Dodge" />
+        <event-block sid="289630454901031">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="365727280873388" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="905358494186884" type="System">
+                    <param id="0" name="Variable">Stamina</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="587509463638616" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Compare two values" sid="945203919604231" type="System">
+                    <param id="0" name="First value">Character.X</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">Wall.X+50</param>
+                </condition>
+                <condition disabled="1" id="-8" inverted="1" name="Compare two values" sid="211493296493817" type="System">
+                    <param id="0" name="First value">Character.Y</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">Wall.Y-50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="862776989884471" type="Character">
+                    <param id="0" name="Y">Character.Y+80</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="932318297723470" type="System">
+                    <param id="0" name="Variable">Stamina</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="367565613745720">
             <conditions>
                 <condition id="0" name="On key pressed" sid="921760728529338" type="Keyboard">
@@ -224,6 +258,40 @@
                     <param id="0" name="X">Character.X-50</param>
                 </action>
                 <action id="-11" name="Subtract from" sid="757805924938490" type="System">
+                    <param id="0" name="Variable">Stamina</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="704021668876986">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="687924514267500" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="244173548665423" type="System">
+                    <param id="0" name="Variable">Stamina</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="310719650356367" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Compare two values" sid="923431561122062" type="System">
+                    <param id="0" name="First value">Character.X</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">Wall.X+50</param>
+                </condition>
+                <condition disabled="1" id="-8" inverted="1" name="Compare two values" sid="857767786836509" type="System">
+                    <param id="0" name="First value">Character.Y</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">Wall.Y-50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="258714439600880" type="Character">
+                    <param id="0" name="Y">Character.Y-50</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="433671589645557" type="System">
                     <param id="0" name="Variable">Stamina</param>
                     <param id="1" name="Value">1</param>
                 </action>
